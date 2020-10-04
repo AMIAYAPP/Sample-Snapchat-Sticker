@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Sample Snapchat Sticker" property="og:site_name" />
+    <meta content="https://cdn.amiayapp.com/img/logo.png" property="snapchat:sticker"> <!--- Change the content url -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Epilogue', sans-serif;
+            background-color: #FFFC00;
+        }
+        
+        .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="middle">
+        <h1>SNAPCHAT STICKER SAMPLE</h1>
+        <div data-theme="dark" class="snapchat-creative-kit-share"></div>
+        <h1>Click on the Snapchat button</h1>
+    </div>
+
+
+    <script>
+        //load snapchat sdk
+        (function (d, s, id) {
+          var js,
+            sjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://sdk.snapkit.com/js/v1/create.js";
+          sjs.parentNode.insertBefore(js, sjs);
+        })(document, "script", "snapkit-creative-kit-sdk");
+      </script>
+</body>
+</html>
